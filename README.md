@@ -1,1 +1,1 @@
-# python3-parte1_alura_jogos
+# python3_alura_jogos
