@@ -7,20 +7,22 @@ def jogar():
 
     print("Fim do jogo")
 
-    palavra_secreta = "python"
+    palavra_secreta = "banana"
+    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
 
     enforcou = False
     acertou = False
 
+    print(letras_acertadas)
     while (not enforcou and not acertou):
         index = 0
         chute = input("Qual a letra? ")
         chute = chute.strip()
         for letra in palavra_secreta:
             if (chute.upper() == letra.upper()):
-                print("Encontrei a letra {} na posição {}".format(letra, index))
+                letras_acertadas[index] = letra
             index = index + 1
-        print("jogando...")
+        print(letras_acertadas)
 
 if (__name__ == "__main__"):
     print("Jogando forca")
